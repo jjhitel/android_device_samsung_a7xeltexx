@@ -17,9 +17,9 @@
 # Inherit from Exynos7580-common
 include device/samsung/exynos7580-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := a3xelte,a3xeltexx
+TARGET_OTA_ASSERT_DEVICE := a7xelte,a7xeltexx
 
-DEVICE_PATH := device/samsung/a3xeltexx
+DEVICE_PATH := device/samsung/a7xeltexx
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
@@ -34,7 +34,7 @@ BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/cmhw
 TARGET_INIT_VENDOR_LIB := libinit_sec
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_a3xelte_defconfig
+TARGET_KERNEL_CONFIG := lineageos_a7xelte_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos7580-common
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
@@ -74,4 +74,4 @@ BOARD_MODEM_TYPE := tss310
 #BOARD_NFC_CHIPSET := xxx
 
 # inherit from the proprietary version
--include vendor/samsung/a3xeltexx/BoardConfigVendor.mk
+-include vendor/samsung/a7xeltexx/BoardConfigVendor.mk

@@ -14,22 +14,22 @@
 
 #
 # This file is the build configuration for a full Android
-# build for a3xeltexx hardware. This cleanly combines a set of
+# build for a7xeltexx hardware. This cleanly combines a set of
 # device-specific aspects (drivers) with a device-agnostic
 # product configuration (apps). Except for a few implementation
 # details, it only fundamentally contains two inherit-product
-# lines, full and a3xeltexx, hence its name.
+# lines, full and a7xeltexx, hence its name.
 #
 
 PRODUCT_RUNTIMES := runtime_libart_default
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/samsung/a3xeltexx/device.mk)
+$(call inherit-product, device/samsung/a7xeltexx/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := a3xeltexx
-PRODUCT_DEVICE := a3xelte
+PRODUCT_NAME := a7xeltexx
+PRODUCT_DEVICE := a7xelte
 PRODUCT_BRAND := Samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SM-A310F
+PRODUCT_MODEL := SM-A710F

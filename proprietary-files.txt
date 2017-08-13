@@ -1,9 +1,7 @@
 ### Bluetooth
-vendor/firmware/bcm43438A1_V0051.0217.hcd
+vendor/firmware/bcm43454_V0145.0239.hcd
 
 ### Camera
-cameradata/datapattern_420sp.yuv
-cameradata/datapattern_front_420sp.yuv
 lib/hw/camera.universal7580.so
 lib/libexynosv4l2.so
 lib/libexynoscamera.so
@@ -27,6 +25,9 @@ vendor/firmware/mfc_fw.bin
 # Image subsystem
 vendor/firmware/fimc_is_fd.bin
 vendor/firmware/fimc_is_fw2_3l2.bin
+vendor/firmware/ois_fw_sec.bin
+vendor/firmware/ois_fw_sem.bin
+vendor/firmware/ois_fw_ve.bin
 
 ### Mobicore
 app/020a0000000000000000000000000000.drbin
@@ -39,7 +40,10 @@ app/mcRegistry/08130000000000000000000000000000.tlbin
 app/mcRegistry/ffffffff00000000000000000000000a.tlbin
 app/mcRegistry/ffffffff00000000000000000000000c.tlbin
 app/mcRegistry/ffffffff00000000000000000000000d.tlbin
+app/mcRegistry/ffffffff00000000000000000000000e.tlbin
 app/mcRegistry/ffffffff00000000000000000000000f.tlbin
+app/mcRegistry/ffffffff00000000000000000000001f.tlbin
+app/mcRegistry/ffffffff00000000000000000000002e.tlbin
 app/mcRegistry/ffffffff000000000000000000000004.tlbin
 app/mcRegistry/ffffffff000000000000000000000005.tlbin
 app/mcRegistry/ffffffff000000000000000000000012.tlbin
@@ -50,9 +54,11 @@ app/mcRegistry/ffffffff000000000000000000000019.tlbin
 app/mcRegistry/ffffffff000000000000000000000021.tlbin
 app/mcRegistry/ffffffff000000000000000000000041.tlbin
 app/mcRegistry/ffffffffd0000000000000000000000a.tlbin
+app/mcRegistry/ffffffffd0000000000000000000000e.tlbin
 app/mcRegistry/ffffffffd00000000000000000000004.tlbin
+app/mcRegistry/ffffffffd00000000000000000000014.tlbin
 app/mcRegistry/ffffffffd00000000000000000000016.tlbin
-app/mcRegistry/FFFFFFFFD00000000000000000000016.tlbin
+app/mcRegistry/ffffffffd00000000000000000000017.tlbin
 app/mcRegistry/fffffffff0000000000000000000001e.tlbin
 bin/cs
 
@@ -158,6 +164,7 @@ lib/libstagefright_hdcp.so
 
 ### Wifi
 etc/wifi/bcmdhd_apsta.bin
+etc/wifi/bcmdhd_ibss.bin
 etc/wifi/bcmdhd_mfg.bin
 etc/wifi/bcmdhd_sta.bin
 etc/wifi/nvram_mfg.txt

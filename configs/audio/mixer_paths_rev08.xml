@@ -666,10 +666,14 @@
 
 	<path name="incall_wb-headset">
 		<path name="incall_nb-headset" />
+		<ctl name="Chargepump Mode" value="VDD" />
+		<ctl name="DNC Max Gain" value="9" />
 	</path>
 
 	<path name="incall_wb-headphone">
 		<path name="incall_nb-headphone" />
+		<ctl name="Chargepump Mode" value="VDD" />
+		<ctl name="DNC Max Gain" value="9" />
 	</path>
 
 	<path name="incall_wb-bt-sco-headset">
@@ -1651,7 +1655,7 @@
 	<!-- Communication playback volume -->
 	<path name="gain-communication-handset">
 		<ctl name="S2801 MIX1_LVL" value="0" />
-		<ctl name="DAC Gain" value="127" />
+		<ctl name="DAC Gain" value="131" />
 		<ctl name="Earphone Volume" value="0" />
 	</path>
 
@@ -2159,7 +2163,7 @@
 		<ctl name="S2801 MIX1_LVL" value="0" />
 		<ctl name="S2801 MIX2_LVL" value="0" />
 		<ctl name="DAC Gain" value="127" />
-		<ctl name="Earphone Volume" value="2" />
+		<ctl name="Earphone Volume" value="4" />
 	</path>
 
 	<path name="gain-incall_nb_extra_vol-speaker">
@@ -2382,7 +2386,7 @@
 
 	<!-- jam voice input volume-->
 	<path name="gain-recording-jam-mic">
-		<ctl name="MIC1 Volume" value="11" />
+		<ctl name="MIC1 Volume" value="10" />
 		<ctl name="MIC1 Boost Volume" value="1" />
 		<ctl name="ADC Left Gain" value="138" />
 		<ctl name="ADC Right Gain" value="138" />
@@ -2539,8 +2543,8 @@
 	<path name="gain-communication-handset-mic">
 		<ctl name="MIC1 Volume" value="11" />
 		<ctl name="MIC1 Boost Volume" value="2" />
-		<ctl name="ADC Left Gain" value="132" />
-		<ctl name="ADC Right Gain" value="132" />
+		<ctl name="ADC Left Gain" value="134" />
+		<ctl name="ADC Right Gain" value="134" />
 	</path>
 
 	<path name="gain-communication-speaker-mic">

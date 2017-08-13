@@ -15,31 +15,32 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/a3xeltexx
+LOCAL_PATH := device/samsung/a7xeltexx
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/a3xeltexx/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/a7xeltexx/overlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := xlarge
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # A list of dpis to select prebuilt apk, in precedence order.
-PRODUCT_AAPT_PREBUILT_DPI := hdpi mdpi
+PRODUCT_AAPT_PREBUILT_DPI := xhdpi hdpi mdpi
 
 # Flat device tree for boot image
 #PRODUCT_PACKAGES += \
 #    dtbhtoolExynos
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy.conf:system/etc/audio_policy.conf \
-    $(LOCAL_PATH)/configs/audio/mixer_paths.xml:system/etc/mixer_paths.xml
+    $(LOCAL_PATH)/configs/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
+    $(LOCAL_PATH)/configs/audio/mixer_paths_rev08.xml:system/etc/mixer_paths_rev08.xml
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
@@ -141,4 +142,4 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, device/samsung/exynos7580-common/device-common.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/a3xeltexx/a3xeltexx-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/a7xeltexx/a7xeltexx-vendor.mk)
